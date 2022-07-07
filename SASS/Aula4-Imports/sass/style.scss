@@ -1,0 +1,6 @@
+// CUIDAR A HIERARQUIA: Home utiliza as cores de Colors, por isso importamos Colors primeiro
+// Import Colors
+@import "./colors/colors.scss";
+
+// Import Home
+@import "./pages/home.scss";

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="./logo.png" alt=""></a>  
+            | <a href="./spaceships.html">The Spaceships</a>
+            | <a href="./hireUs.html">Hire Us</a>                 
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <section>
+            <h2>Hire Us Now</h2>
+            <p>Leave a Message to request one of our services and we wil get back to you as soon as possible.</p>
+        </section>
+        <section>
+            <form action="">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <span> - </span>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <br>
+                <div>
+                    <label for="spaceship">Spaceship:</label>
+                    <select name="spaceship" id="spaceship">
+                        <option value="Falcon9">Falcon 9</option>
+                        <option value="FalconHeavy">Falcon Heavy</option>
+                    </select>
+                    <span> | </span>
+                    <label for="service">Type of service:</label>
+                    <input type="search" id="service" name="service" list="services">
+                    <datalist id="services">
+                        <option value="Option 1"></option>
+                        <option value="Option 2"></option>
+                        <option value="Option 3"></option>
+                        <option value="Option 4"></option>
+                    </datalist>
+                </div>
+                <br>
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

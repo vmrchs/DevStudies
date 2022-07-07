@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap');
+
+h1 {
+    color: blue;
+    font-family: 'Syne Tactile', cursive;
+}
+
+strong {
+    color: red;
+}

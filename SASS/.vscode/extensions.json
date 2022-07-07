@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "chakrounanas.turbo-console-log",
+        "esbenp.prettier-vscode",
+        "wallabyjs.quokka-vscode",
+        "aaron-bond.better-comments",
+        "ms-vscode-remote.remote-ssh",
+        "ms-vscode-remote.remote-containers",
+        "dsznajder.es7-react-js-snippets"
+    ]
+}

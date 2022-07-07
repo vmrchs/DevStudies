@@ -1,0 +1,20 @@
+div div div {
+    border: 1vh solid purple;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+[class ^="block-"] {
+    display: flex;
+    flex-direction: row;
+    gap: .8rem;
+}
+
+.photo {
+    height: 30vh;
+    width: 330px;
+}

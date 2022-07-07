@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background-color: #292929;
+  color: white;
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 8px 15px;
+}
+header img {
+  width: 180px;
+}
+.navButtons {
+  display: flex;
+  gap: 15px;
+}
+.navButtons button {
+  font-size: 16px;
+  border: 2px solid transparent;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.navButtons button:hover {
+  border-bottom: 2px solid white;
+}
+.sectionTitle {
+  font-size: 26px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 25px;
+}
+.sectionDescription {
+  text-align: center;
+  color: #383838;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "mainContent extraContent";
+  padding: 20px;
+  flex: 1 0 auto;
+}
+.mainContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  grid-area: mainContent;
+}
+.mainCard {
+  width: 280px;
+  height: 380px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.mainCard:hover {
+  border-color: black;
+}
+.mainCard img {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+}
+.mainCard h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 6px;
+}
+.mainCard p {
+  padding: 6px;
+}
+aside {
+  background-color: #383838;
+  color: white;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 300px;
+  grid-area: extraContent;
+  gap: 20px;
+}
+.extraContent h3 {
+  text-align: center;
+  font-size: 22px;
+}
+.sideCard {
+  width: 75%;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.sideCard:hover {
+  border-color: white;
+}
+.sideCard img {
+  width: 100%;
+  border-radius: 10px;
+}
+.sideCard h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+footer {
+  width: 100%;
+  min-height: 40px;
+  background-color: #292929;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 15px;
+}
+footer img {
+  width: 180px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 630px) {
+  .gridContainer {
+    grid-template-areas:
+      "mainContent"
+      "extraContent";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  aside {
+    min-width: auto;
+  }
+  footer a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 463px) {
+  header {
+    justify-content: center;
+    flex-direction: column;
+  }
+  footer {
+    justify-content: center;
+  }
+}

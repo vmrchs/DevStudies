@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 18</title>
+    <script src="./js/home-registration.js"></script>
+</head>
+
+<body>
+    <h3>Cadastro de Residências</h3>
+    <form action="">
+        <fieldset>
+            <p>
+                <label for="">Número da casa: </label>
+                <input type="text" name="number">
+            </p>
+            <p>
+                <label for="">Bairro: </label>
+                <input type="text" name="neighborhood">
+            </p>
+            <p>
+                <label for="">Cidade: </label>
+                <input type="text" name="city">
+            </p>
+            <p>
+                <label for="">Área da casa: </label>
+                <input type="text" name="area">
+            </p>
+            <button onclick="saveHouse()" type="button">Salvar</button>
+        </fieldset>
+    </form>
+    <ul id="house-list"></ul>
+</body>
+
+</html>
