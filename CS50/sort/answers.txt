@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: It was the fastest algorithm to solve the sorted values list.
+
+sort2 uses: Merge Sort
+
+How do you know?: It was the fastest algorithm to solve the reversed values lists.
+
+sort3 uses: Selection Sort
+
+How do you know?: Because it had similar times among the three types of lists, no matter the sample size.
