@@ -1,14 +1,16 @@
 const howSum = (targetSum, numbers, memo = {}) => {
-  if (targetSum in memo) return memo[targetSum];
-  if (targetSum === 0) return [];
+  if (targetSum in memo) return memo[targetSum]; // here we will store cached values to improve our function
+  if (targetSum === 0) return []; // when the function reaches a 0, it returns and empty array
   if (targetSum < 0) return null;
 
   for (let num of numbers) {
-    const remainder = targetSum - num;
-    const remainderResult = howSum(remainder, numbers, memo);
+    // we iterate throu the array
+    const remainder = targetSum - num; // subtracting each item from the targetSum
+    const remainderResult = howSum(remainder, numbers, memo); // then we finally call our recursion
     if (remainderResult !== null) {
-      memo[targetSum] = [...remainderResult, num];
-      return memo[targetSum];
+      // whenever the result brought back is different than null, empty array or an array with items in it
+      memo[targetSum] = [...remainderResult, num]; // using the spread operator (...)  we add the current num to whatever came through and assign it to our memo object
+      return memo[targetSum]; // and return the array to its parent
     }
   }
 
