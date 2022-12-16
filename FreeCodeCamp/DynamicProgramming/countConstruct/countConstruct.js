@@ -1,4 +1,5 @@
-const countConstruct = (target, wordBank) => {
+const countConstruct = (target, wordBank, memo = {}) => {
+  if (target in memo) return memo[target];
   if (target === "") return 1;
 
   let totalCount = 0;
@@ -7,23 +8,25 @@ const countConstruct = (target, wordBank) => {
     if (target.indexOf(word) === 0) {
       const numWaysForRest = countConstruct(
         target.slice(word.length),
-        wordBank
+        wordBank,
+        memo
       );
       totalCount += numWaysForRest;
     }
   }
 
+  memo[target] = totalCount;
   return totalCount;
 };
 
-console.log(countConstruct("purple", ["purp", "p", "ur", "le", "purpl"]));
-console.log(countConstruct("abcdef", ["ab", "abc", "cd", "def", "abcd"])); // true
+console.log(countConstruct("purple", ["purp", "p", "ur", "le", "purpl"])); // 2
+console.log(countConstruct("abcdef", ["ab", "abc", "cd", "def", "abcd"])); // 1
 console.log(
   countConstruct("skateboard", ["bo", "rd", "ate", "t", "ska", "sk", "boar"])
-); // false
+); // 0
 console.log(
   countConstruct("enterapotentpot", ["a", "p", "ent", "enter", "ot", "o", "t"])
-); // true
+); // 4
 console.log(
   countConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", [
     "e",
@@ -33,4 +36,4 @@ console.log(
     "eeeee",
     "eeeeee",
   ])
-); // false
+); // 0
