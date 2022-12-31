@@ -4,7 +4,7 @@ const canConstruct = (target, wordBank) => {
 
   for (let i = 0; i <= target.length; i++) {
     if (table[i] === true) {
-      // if my current position in the table is reachable, then we'll do some aditional logic
+      // if my current position in the table is reachable, then we'll do some additional logic
       for (let word of wordBank) {
         // if the word matches the characters starting at position i
         if (target.slice(i, i + word.length) === word) {
