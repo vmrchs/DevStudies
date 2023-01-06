@@ -20,3 +20,14 @@ Once we have our elements assigned to variables, we can them use methods to inte
 ## 4. Event Listeners
 
 Event listeners are the main responsible in adding interaction with the elements being displayed
+
+## 5. Event Propagation 
+
+3 Phases:
+    1. Event Capturing
+    2. Target
+    3. Event Bubbling
+   
+## 6. Event Delegation
+
+It allows users to append a SINGLE event listener to a parent element that adds it to all of its present AND future descendants  that match a selector
