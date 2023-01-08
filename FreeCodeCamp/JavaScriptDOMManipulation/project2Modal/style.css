@@ -43,6 +43,7 @@ body {
 
     animation-name: animateModal;
     animation-duration: .4s;
+    animation-direction: normal;
 }
 
 #close-btn {
